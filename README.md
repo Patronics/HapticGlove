@@ -5,7 +5,7 @@
 
 #### Plan:
 Use VL53L0X distance sensor to provide haptic input to a user, serving as a virtual cane.
-Use Raspberry Pi Pico with CircuitPython
+Use Raspberry Pi Pico with CircuitPython 8
 #### Dependencies:
 From [Adafruit circuitPython bundle](https://github.com/adafruit/circuitpython):
 - adafruit_bus_device
