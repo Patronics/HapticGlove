@@ -5,15 +5,6 @@ import digitalio
 import adafruit_vl53l0x
 
 
-i2cSCL = digitalio.DigitalInOut(board.GP21)
-i2cSDA = digitalio.DigitalInOut(board.GP20)
-i2cSCL.pull = digitalio.Pull.UP
-i2cSDA.pull = digitalio.Pull.UP
-#i2cSCL.direction = digitalio.Direction.OUTPUT
-#i2cSDA.direction = digitalio.Direction.OUTPUT
-i2cSCL.drive_mode = digitalio.DriveMode.OPEN_DRAIN
-i2cSDA.drive_mode = digitalio.DriveMode.OPEN_DRAIN
-
 
 
 i2c = busio.I2C(board.GP21, board.GP20)
