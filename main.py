@@ -6,6 +6,7 @@ import adafruit_vl53l0x
 import pwmio
 import math
 
+maxDistVal = 1211 #max recorded valid value so far
 
 i2c = busio.I2C(board.GP21, board.GP20)
 distSense = adafruit_vl53l0x.VL53L0X(i2c)
@@ -23,15 +24,13 @@ while True:
 	print('Range: {}mm'.format(distSense.range))
 
     # distSense is ALWAYS 0 to 8192
-    if (distSense.range > 8192)
+    distSenseRange = distSense.range
+    if (distSenseRange > maxDistVal)
     {
-        distSense.range = 8192
+        distSenseRange = maxDistVal
     }
-    
-    distSensePercent = distSense.range / 8192
-    distSensePercent = distSensePercent * 1211
 
-	normDist = distSensePercent / 1211
+	normDist = distSenseRange / maxDistVal
 	dutyCycle = (1 - normDist) * 65535
 	motorPin.duty_cycle = math.floor(dutyCycle)
 	print(dutyCycle)
