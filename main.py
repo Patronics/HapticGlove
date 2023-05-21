@@ -22,7 +22,16 @@ while True:
 	time.sleep(0.5)
 	print('Range: {}mm'.format(distSense.range))
 
-	normDist = math.max(distSense.range,1211) / 1211	
+    # distSense is ALWAYS 0 to 8192
+    if (distSense.range > 8192)
+    {
+        distSense.range = 8192
+    }
+    
+    distSensePercent = distSense.range / 8192
+    distSensePercent = distSensePercent * 1211
+
+	normDist = distSensePercent / 1211
 	dutyCycle = (1 - normDist) * 65535
 	motorPin.duty_cycle = math.floor(dutyCycle)
 	print(dutyCycle)
