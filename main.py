@@ -22,13 +22,11 @@ while True:
 	led.value = False
 	time.sleep(0.5)
 	print('Range: {}mm'.format(distSense.range))
-
-    # distSense is ALWAYS 0 to 8192
-    distSenseRange = distSense.range
-    if (distSenseRange > maxDistVal)
-    {
-        distSenseRange = maxDistVal
-    }
+	
+	# distSense is ALWAYS 0 to 8192
+	distSenseRange = distSense.range
+	if (distSenseRange > maxDistVal):
+		distSenseRange = maxDistVal
 
 	normDist = distSenseRange / maxDistVal
 	dutyCycle = (1 - normDist) * 65535
