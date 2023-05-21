@@ -14,7 +14,7 @@ distSense = adafruit_vl53l0x.VL53L0X(i2c)
 led = digitalio.DigitalInOut(board.LED)
 led.direction = digitalio.Direction.OUTPUT
 
-motorPin = pwmio.PWMOut(board.GP0)
+motorPin = pwmio.PWMOut(board.GP16)
 
 while True:
 	led.value = True
