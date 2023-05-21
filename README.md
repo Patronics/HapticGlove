@@ -1,7 +1,7 @@
 # HapticGlove
 
 ## A project for HackDavis 2023
-
+Read our Devpost https://devpost.com/software/haptic-hand
 
 #### Plan:
 Use VL53L0X distance sensor to provide haptic input to a user, serving as a virtual cane.
