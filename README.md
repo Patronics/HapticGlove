@@ -1,6 +1,8 @@
 # HapticGlove
 
-## A project for HackDavis 2023
+Enables a sight-impared wearer to sense the distance to items in their environment, via haptic feedback on their hand!
+
+### A project for HackDavis 2023
 See photos and vidoes on our Devpost https://devpost.com/software/haptic-hand!
 Our project won the award for "Best Hardware Hack" as part of Hack Davis 2023!
 
