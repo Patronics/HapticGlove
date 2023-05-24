@@ -1,7 +1,7 @@
 # HapticGlove
 
 ## A project for HackDavis 2023
-Read our Devpost https://devpost.com/software/haptic-hand!
+See photos and vidoes on our Devpost https://devpost.com/software/haptic-hand!
 Our project won the award for "Best Hardware Hack" as part of Hack Davis 2023!
 
 ## Description
